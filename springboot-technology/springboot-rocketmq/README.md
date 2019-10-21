@@ -3,6 +3,7 @@
  https://blog.csdn.net/shuaishuai5213/article/details/102628936
 
 阅读顺序如下，其中每一个包都可以单独运行：
+注意把里面的ip地址啥的改为自己的
 
 `topic`：建立第一个topic
 
@@ -30,3 +31,32 @@ Exception in thread "main" org.apache.rocketmq.client.exception.MQClientExceptio
 `order`：产生顺序消息，即让产生的消息落入同一队列，这里使用一个简单的订单id来模拟
 
 `transaction`：分布式事务消息，这里使用一个银行转账demo来进行模拟
+`error`：重试策略
+
++ 这里分为producer端重试和consumer端重试。 
++ 两个重试策略不一样，可以结合代码去了解一个
+
+
+
+`springboot`：springboot与rocketmq的整合
+
+注意这里，我注释掉了之前的rocketmq-client依赖
+
+```java
+<dependency>
+   <groupId>org.apache.rocketmq</groupId>
+   <artifactId>rocketmq-client</artifactId>
+   <version>4.3.2</version>
+</dependency>
+```
+
+因为这个依赖会和rocketmq-spring-boot-starter依赖产生冲突，有需要的可以自己加上去，但是只能留一个，可以看一下我写的博客
+
+ https://blog.csdn.net/shuaishuai5213/article/details/102665133
+
+
++ 这个里面的`transaction`包是事务消息包，具体的内容参考代码
+
++ 注意这里的`rocketmq-spring-boot-starter`依赖,浪费了我很多时间才找对，可以看上面我的博客
++ 因为这里是springboot项目，所以直接运行`SpringbootRocketmqApplication `即可，在下面的测试用例那里也有，也可以运行
+

@@ -3,6 +3,7 @@
  https://blog.csdn.net/shuaishuai5213/article/details/102628936
 
 阅读顺序如下，其中每一个包都可以单独运行：
+注意把里面的ip地址啥的改为自己的
 
 `topic`：建立第一个topic
 
@@ -51,9 +52,11 @@ Exception in thread "main" org.apache.rocketmq.client.exception.MQClientExceptio
 
 因为这个依赖会和rocketmq-spring-boot-starter依赖产生冲突，有需要的可以自己加上去，但是只能留一个，可以看一下我写的博客
 
-[点击这里]: https://blog.csdn.net/shuaishuai5213/article/details/102665133
-
+ https://blog.csdn.net/shuaishuai5213/article/details/102665133
 
 
 + 这个里面的`transaction`包是事务消息包，具体的内容参考代码
+
++ 注意这里的`rocketmq-spring-boot-starter`依赖,浪费了我很多时间才找对，可以看上面我的博客
++ 因为这里是springboot项目，所以直接运行`SpringbootRocketmqApplication `即可，在下面的测试用例那里也有，也可以运行
 

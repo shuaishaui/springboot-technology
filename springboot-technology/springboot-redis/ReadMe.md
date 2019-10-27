@@ -1,0 +1,5 @@
+这是一个springboot整合Redis的demo，并且结合Elasticsearch 实现了搜索热词的功能，业务逻辑如下：
+
++ Elasticsearch 可以参考springboot-elasticsearch项目
++ 这里主要使用Redis里面的zset进行热词的存储，我将每一次搜索出来的数据条数作为分数写入Redis，热词显示的时候按照分数来进行排名
++ 当搜索数据的条数少于一页的时候才进行热词的显示，多于一页的时候就不去Redis里面获取数据

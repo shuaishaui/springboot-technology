@@ -2,9 +2,8 @@
 
 ​         Netty 是由 JBOSS 提供的一个 java 开源框架。Netty 提供异步的、事件驱动的网络应用 程序框架和工具，用以快速开发高性能、高可靠性的网络服务器和客户端程序。	
 ​         Netty 是一个基于 NIO 的客户、服务器端编程框架
-​        ​        <img src="C:\Users\帅帅\AppData\Roaming\Typora\typora-user-images\1572420308255.png" alt="1572420308255" style="zoom:33%;" />
+​       
 
-## 
 ## 2. 线程模型 
 
 Netty 中支持单线程模型，多线程模型，主从多线程模型 ==> 都是针对服务端

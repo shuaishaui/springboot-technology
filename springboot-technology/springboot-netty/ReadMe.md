@@ -48,3 +48,5 @@ writeAndFlush:
 相对最成熟的数据传递方式。有服务器的开发者提供一个固定格式的协议标准。客户端 和服务器发送数据和接受数据的时候，都依据协议制定和解析消息。 
          这里可以自己写一个协议
           <img src="C:\Users\帅帅\AppData\Roaming\Typora\typora-user-images\1572430530556.png" alt="1572430530556" style="zoom:33%;" />
+
+

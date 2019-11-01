@@ -8,6 +8,7 @@ public class SpringbootWebsocketApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootWebsocketApplication.class, args);
+		System.out.println("test");
 	}
 
 }
